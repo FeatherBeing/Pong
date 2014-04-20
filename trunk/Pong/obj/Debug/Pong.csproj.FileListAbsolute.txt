@@ -1,0 +1,9 @@
+c:\users\gabriel\documents\visual studio 2013\Projects\Pong\Pong\bin\Debug\Pong.exe.config
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\obj\Debug\Pong.Properties.Resources.resources
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\obj\Debug\Pong.GameForm.resources
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\obj\Debug\Pong.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\bin\Debug\Pong.exe
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\bin\Debug\Pong.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\obj\Debug\Pong.exe
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\obj\Debug\Pong.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2013\Projects\Pong\Pong\obj\Debug\Pong.csprojResolveAssemblyReference.cache
