@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Pong
 {
-    public partial class GameForm : Form, IGameView
+    public partial class GameForm : Form, IGameView, IDisposable
     {
         public Size Boundaries { get; private set; }
         private Bitmap gameObjects;
@@ -46,7 +46,7 @@ namespace Pong
         {
             // If the game is over we need to cease drawing as that will throw an exception
             // Due to PlayerWin event calling a release of drawing resources in this instance of IGameView
-            if (gameController.Players.Any(player => player.Score >= 10)) 
+            if (gameController.IsGameOver) 
             {       
                 return;
             }
@@ -65,7 +65,7 @@ namespace Pong
             }
         }
 
-        void IGameView.Release()
+        void IDisposable.Dispose()
         {
             pen.Dispose();
             myFont.Dispose();

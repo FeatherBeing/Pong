@@ -14,9 +14,5 @@ namespace Pong
         /// <param name="paddle2"></param>
         void Draw(Ball ball, Paddle paddle, Paddle paddle2);
         void PlayerWon(Player winner);
-        /// <summary>
-        /// Releases all the resources allocated by this IGameView.
-        /// </summary>
-        void Release();
     }
 }

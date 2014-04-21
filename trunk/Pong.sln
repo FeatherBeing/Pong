@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pong", "Pong\Pong.csproj", "{010E0DF5-6246-4FA3-95EB-6292EB42A133}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{6E11AA19-516F-440A-809B-6C05C49B2CD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{010E0DF5-6246-4FA3-95EB-6292EB42A133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010E0DF5-6246-4FA3-95EB-6292EB42A133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010E0DF5-6246-4FA3-95EB-6292EB42A133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E11AA19-516F-440A-809B-6C05C49B2CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E11AA19-516F-440A-809B-6C05C49B2CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E11AA19-516F-440A-809B-6C05C49B2CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E11AA19-516F-440A-809B-6C05C49B2CD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
