@@ -16,3 +16,5 @@ C:\Users\Gabriel\Documents\GitHub\Pong\trunk\Pong\obj\Debug\Pong.GameForm.resour
 C:\Users\Gabriel\Documents\GitHub\Pong\trunk\Pong\obj\Debug\Pong.csproj.GenerateResource.Cache
 C:\Users\Gabriel\Documents\GitHub\Pong\trunk\Pong\bin\Debug\Pong.exe
 C:\Users\Gabriel\Documents\GitHub\Pong\trunk\Pong\bin\Debug\Pong.pdb
+C:\Users\Gabriel\Documents\GitHub\Pong\trunk\Pong\bin\Debug\Logic.dll
+C:\Users\Gabriel\Documents\GitHub\Pong\trunk\Pong\bin\Debug\Logic.pdb

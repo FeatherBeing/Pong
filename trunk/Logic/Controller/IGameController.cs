@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Pong
+namespace PongController
 {
-    internal enum Move
+    public enum Move
     {
         Up, Down
     }
 
-    interface IGameController
+    public interface IGameController
     {
         Player[] Players { get; }
         PeriodicTick GameTicker { get; }

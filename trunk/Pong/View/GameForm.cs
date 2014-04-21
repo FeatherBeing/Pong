@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Linq;
+using PongController;
 
 namespace Pong
 {
@@ -25,7 +26,7 @@ namespace Pong
         private void GameForm_Load(object sender, EventArgs e)
         {
             Boundaries = new Size(ClientSize.Width, ClientSize.Height); // Always set boundaries to size of the view control
-            gameController = new GameController(this, new Player(Orientation.Left, this), new Player(Orientation.Right, this));
+            gameController = new GameController(this, new Player(PongController.Orientation.Left, this), new Player(PongController.Orientation.Right, this));
             gameController.PlayerWin += (this as IGameView).PlayerWon;
             // Start a seperate worker task for game logic
             Task.Factory.StartNew(
@@ -88,16 +89,16 @@ namespace Pong
                     switch (key)
                     {
                         case Keys.Up:
-                            gameController.MovePaddle(0, Pong.Move.Up);
+                            gameController.MovePaddle(0, PongController.Move.Up);
                             break;
                         case Keys.Down:
-                            gameController.MovePaddle(0, Pong.Move.Down);
+                            gameController.MovePaddle(0, PongController.Move.Down);
                             break;
                         case Keys.W:
-                            gameController.MovePaddle(1, Pong.Move.Up);
+                            gameController.MovePaddle(1, PongController.Move.Up);
                             break;
                         case Keys.S:
-                            gameController.MovePaddle(1, Pong.Move.Down);
+                            gameController.MovePaddle(1, PongController.Move.Down);
                             break;
                     }
                 }

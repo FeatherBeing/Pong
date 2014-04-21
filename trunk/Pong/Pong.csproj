@@ -44,17 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Delegates.cs" />
     <Compile Include="Keyboard.cs" />
-    <Compile Include="Model\Paddle.cs" />
-    <Compile Include="Model\AIPlayer.cs" />
-    <Compile Include="Model\Ball.cs" />
-    <Compile Include="Controller\GameController.cs" />
-    <Compile Include="Controller\IGameController.cs" />
-    <Compile Include="Model\PeriodicTick.cs" />
-    <Compile Include="Model\Player.cs" />
     <Compile Include="NativeMethods.cs" />
-    <Compile Include="Vector.cs" />
     <Compile Include="View\GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,7 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\IGameView.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,7 +79,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\PongController.csproj">
+      <Project>{6e11aa19-516f-440a-809b-6c05c49b2cd6}</Project>
+      <Name>PongController</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

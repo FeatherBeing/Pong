@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Pong
+namespace PongController
 {
-    interface IGameView
+    public interface IGameView
     {
         Size Boundaries { get; }
         /// <summary>

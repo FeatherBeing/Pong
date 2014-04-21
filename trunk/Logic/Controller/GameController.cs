@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Pong
+namespace PongController
 {
-    class GameController : IGameController
+    public class GameController : IGameController
     {
         private const int WINNING_SCORE = 10;
         private readonly Ball ball;
@@ -23,8 +23,7 @@ namespace Pong
         {
             const int REFRESH_RATE = 25; // TIME IN MILLISECONDS IN WHICH THE GAME RECALCULATES ALL OBJECT POSITIONS
                                          // CHANGING THIS CAN DRAMATICALLY AFFECT GAME PERFORMANCE!!!!
-            GameTicker = new PeriodicTick(REFRESH_RATE);
-            GameTicker.Tick += Refresh; // Each time our PeriodicTick ticks we will refresh the ball position and angle
+            GameTicker = new PeriodicTick(REFRESH_RATE, this);
 
             //Start the ticker...
             GameTicker.Start();

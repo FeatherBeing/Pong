@@ -7,7 +7,7 @@
     <ProjectGuid>{6E11AA19-516F-440A-809B-6C05C49B2CD6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Logic</RootNamespace>
+    <RootNamespace>PongController</RootNamespace>
     <AssemblyName>Logic</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Controller\GameController.cs" />
+    <Compile Include="Controller\IGameController.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Model\AIPlayer.cs" />
+    <Compile Include="Model\Ball.cs" />
+    <Compile Include="Model\Paddle.cs" />
+    <Compile Include="Model\PeriodicTick.cs" />
+    <Compile Include="Model\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vector.cs" />
+    <Compile Include="View\IGameView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
