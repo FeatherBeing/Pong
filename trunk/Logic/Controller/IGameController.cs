@@ -11,7 +11,6 @@ namespace PongController
     {
         Player[] Players { get; }
         PeriodicTick GameTicker { get; }
-        bool IsGameOver { get; }
         /// <summary>
         /// Initializes this instance of the IGameController.
         /// </summary>

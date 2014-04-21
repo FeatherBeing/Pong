@@ -10,7 +10,6 @@ namespace PongController
         public event PlayerWonHandler PlayerWin;
         public Player[] Players { get; private set; }
         public PeriodicTick GameTicker { get; private set; }
-        public bool IsGameOver { get; private set; }
 
         public GameController(IGameView view, Player player, Player player2)
         {
@@ -66,7 +65,6 @@ namespace PongController
                 //     and release all resources used by this instance of IGameView
                 PlayerWin(player);                                    
                 GameTicker.CancellationTokenSrc.Cancel(); 
-                IsGameOver = true;
                 (view as IDisposable).Dispose();
             }
 

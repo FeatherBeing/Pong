@@ -12,6 +12,7 @@ namespace Pong
     public partial class GameForm : Form, IGameView, IDisposable
     {
         public Size Boundaries { get; private set; }
+        private bool isGameOver;
         private Bitmap gameObjects;
         private IGameController gameController;
         private readonly Pen pen = new Pen(Color.White, 5);
@@ -40,6 +41,7 @@ namespace Pong
 
         void IGameView.PlayerWon(Player winner)
         {
+            isGameOver = true;
             MessageBox.Show(String.Concat("Player ", winner.Id.ToString() + " won!"));
         }
 
@@ -47,7 +49,7 @@ namespace Pong
         {
             // If the game is over we need to cease drawing as that will throw an exception
             // Due to PlayerWin event calling a release of drawing resources in this instance of IGameView
-            if (gameController.IsGameOver) 
+            if (isGameOver) 
             {       
                 return;
             }
