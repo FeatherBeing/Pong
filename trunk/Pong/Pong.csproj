@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logic\PongController.csproj">
+    <ProjectReference Include="..\Logic\PongEngine.csproj">
       <Project>{6e11aa19-516f-440a-809b-6c05c49b2cd6}</Project>
-      <Name>PongController</Name>
+      <Name>PongEngine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

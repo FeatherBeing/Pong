@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace PongController
+namespace PongEngine
 {
     public class PeriodicTick
     {

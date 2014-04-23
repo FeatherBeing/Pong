@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pong", "Pong\Pong.csproj", "{010E0DF5-6246-4FA3-95EB-6292EB42A133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongController", "Logic\PongController.csproj", "{6E11AA19-516F-440A-809B-6C05C49B2CD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongEngine", "Logic\PongEngine.csproj", "{6E11AA19-516F-440A-809B-6C05C49B2CD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

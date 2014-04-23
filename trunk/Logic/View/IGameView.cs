@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace PongController
+namespace PongEngine
 {
     public interface IGameView
     {

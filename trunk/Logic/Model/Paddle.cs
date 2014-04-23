@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace PongController
+namespace PongEngine
 {
     public enum Orientation
     {

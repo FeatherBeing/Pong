@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Drawing;
 
-namespace PongController
+namespace PongEngine
 {
     public enum CollisionType
     {

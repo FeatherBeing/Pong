@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PongController
+namespace PongEngine
 {
     class AIPlayer : Player
     {
